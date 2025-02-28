@@ -903,3 +903,26 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[47], line 12
+     11 try:
+---> 12     import sklearn.metrics
+     13 except ImportError:
+
+ModuleNotFoundError: No module named 'sklearn.metrics'
+
+During handling of the above exception, another exception occurred:
+
+ModuleNotFoundError                       Traceback (most recent call last)
+Cell In[47], line 16
+     14     import subprocess
+     15     subprocess.check_call(["pip", "install", "scikit-learn", "transformers", "datasets"])
+---> 16     import sklearn.metrics
+     19 class NaturalSparseAttention(nn.Module):
+     20     """
+     21     Implementation of Natural Sparse Attention as described in the paper.
+     22     """
+
+ModuleNotFoundError: No module named 'sklearn.metrics' - I don't get, I have scikit-learn installed.??/
